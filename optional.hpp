@@ -421,6 +421,7 @@ public:
     }
   }
 
+  constexpr
   optional(optional&& rhs) noexcept(is_nothrow_move_constructible<T>::value)
   : OptionalBase<T>(only_set_initialized, false)
   {
